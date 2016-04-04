@@ -1,5 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Dark Glass
-Comment=An elegant dark theme with transparency
+Name=Dark Blue Glass
+Comment=An elegant dark blue theme with transparency
 Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Dark Blue Glass
+MetacityTheme=Dark Blue Glass
+IconTheme=Mint-X-Aqua
+CursorTheme=Adwaita
