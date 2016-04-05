@@ -30,7 +30,7 @@ workspace view
 
 ## Install
 
-	cd ~/.theme  # if this folder not exist, create one
+	cd ~/.themes # if this folder not exist, create one
 	git clone https://github.com/einverne/dark-blue-glass.git
 
 Then change to this theme in system setting.
