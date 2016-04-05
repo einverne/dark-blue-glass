@@ -11,7 +11,7 @@
 
 /* ###################################################################
  * Section common with Gnome Shell
- * ... contains a few cinnamon specific styles (rare occurences) 
+ * ... contains a few cinnamon specific styles (rare occurences)
  * ###################################################################*/
 stage {
 	font-family: sans, sans-serif;
@@ -78,7 +78,7 @@ StTooltip StLabel {
 	color: white;
 }
 /* ===================================================================
- * Shared button properties 
+ * Shared button properties
  * ===================================================================*/
 .notification-button, .notification-icon-button,
 .hotplug-notification-item, .hotplug-resident-eject-button,
@@ -107,7 +107,7 @@ StTooltip StLabel {
 	background-gradient-end: rgba(255, 255, 255, 0.2);
 }
 /* ===================================================================
- * PopupMenu (popupMenu.js) 
+ * PopupMenu (popupMenu.js) start menu custom
  * ===================================================================*/
 
 .popup-menu-boxpointer {
@@ -274,13 +274,13 @@ StTooltip StLabel {
 #panelLeft:rtl {
 	padding-left: 4px;
 }
-#panelRight:ltr { 
+#panelRight:ltr {
 	padding-left: 0px;
-	spacing: 1px;
+	spacing: 0;
 }
 #panelRight:rtl {
 	padding-right: 0px;
-	spacing: 1px;
+	spacing: 0;
 }
 
 .panel-status-button {
@@ -350,7 +350,7 @@ StTooltip StLabel {
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
-	
+
 }
 .panel-button:active > .system-status-icon,
 .panel-button:checked > .system-status-icon,
@@ -364,100 +364,7 @@ StTooltip StLabel {
 }
 
 /* ===================================================================
- * Window list (windowList.js)
- * ===================================================================*/
-
-.window-list-box {
-    spacing: 3px;
-    padding: 0;
-}
-
-.window-list-item-label {
-    width: 15em;
-    min-width: 5px;
-}
-
-.window-list-item-box {
-    color: #dcdcdc;
-    font-weight: normal;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-.window-list-item-box:hover,
-.window-list-item-box:active,
-.window-list-item-box:checked,
-.window-list-item-box:focus,
-.window-list-item-box:checked:hover,
-.window-list-item-box:focus:hover,
-.window-list-item-box:active:hover,
-.window-list-item-demands-attention,
-.window-list-item-demands-attention:hover {
-}
-
-/*-----top panel-----*/
-
-.panel-top .window-list-item-box:hover  {
-    font-weight: bold;
-    border-image: url("panel-assets/top-item-hover.svg") 4;
-}
-
-.panel-top .window-list-item-box:active,
-.panel-top .window-list-item-box:checked,
-.panel-top .window-list-item-box:focus  {
-    font-weight: bold;
-    border-image: url("panel-assets/top-item-active.svg") 4;
-    color: #fff;
-}
-
-.panel-top .window-list-item-box:checked:hover,
-.panel-top .window-list-item-box:focus:hover,
-.panel-top .window-list-item-box:active:hover  {
-    font-weight: bold;
-    border-image: url("panel-assets/top-item-active-hover.svg") 4;
-    color: #fff;
-}
-
-.panel-top .window-list-item-demands-attention {
-    border-image: url("panel-assets/attention.svg") 4;
-}
-
-.panel-top .window-list-item-demands-attention:hover {
-    border-image: url("panel-assets/attention-hover.svg") 4;
-}
-/*-----bottom panel-----*/
-
-.panel-bottom .window-list-item-box:hover {
-    font-weight: bold;
-    border-image: url("panel-assets/bottom-item-hover.svg") 4;
-}
-
-.panel-bottom .window-list-item-box:active,
-.panel-bottom .window-list-item-box:checked,
-.panel-bottom .window-list-item-box:focus  {
-    font-weight: bold;
-    border-image: url("panel-assets/bottom-item-active.svg") 4;
-    color: #fff;
-}
-
-.panel-bottom .window-list-item-box:checked:hover,
-.panel-bottom .window-list-item-box:focus:hover,
-.panel-bottom .window-list-item-box:active:hover  {
-    font-weight: bold;
-    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
-    color: #fff;
-}
-
-.panel-bottom .window-list-item-demands-attention {
-    border-image: url("panel-assets/attention.svg") 4;
-}
-
-.panel-bottom .window-list-item-demands-attention:hover {
-    border-image: url("panel-assets/attention-hover.svg") 4;
-}
-
-/* ===================================================================
- * Overview 
+ * Overview
  * ===================================================================*/
 #overview {
 	spacing: 12px;
@@ -609,7 +516,7 @@ StTooltip StLabel {
 	text-align: center;
 }
 /* ===================================================================
- * ViewSelector 
+ * ViewSelector
  * ===================================================================*/
 #viewSelector {
 	spacing: 1em;
@@ -633,7 +540,7 @@ StTooltip StLabel {
 	border-radius: 0.25em;
 }
 /* ===================================================================
- * Looking Glass 
+ * Looking Glass
  * ===================================================================*/
 #LookingGlassDialog {
 	background-color: rgba(85,85,85,0.85);
@@ -724,7 +631,7 @@ StTooltip StLabel {
 }
 
 /* ===================================================================
- * Date applet 
+ * Date applet
  * ===================================================================*/
 .calendar {
 	padding: .4em 1.75em;
@@ -844,7 +751,7 @@ StTooltip StLabel {
  * ===================================================================*/
 #notification {
 	font-size: 8.5pt;
-	border-radius: 8px 8px 8px 8px;
+	border-radius: 8px;
 	border: 2px solid #a5a5a5;
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(0,0,0,0.4);
@@ -889,7 +796,7 @@ StTooltip StLabel {
 	spacing: 10px;
 }
 .notification-button {
-	border-radius: 18px;
+	border-radius: 4px;
 	font-size: 11pt;
 	padding: 4px 42px 5px;
 }
@@ -912,7 +819,7 @@ StTooltip StLabel {
 }
 .hotplug-notification-item {
 	padding: 2px 10px;
-	border-radius: 18px;
+	border-radius: 4px;
 	font-size: 10.5pt;
 }
 .hotplug-notification-item:focus {
@@ -1390,24 +1297,25 @@ StTooltip StLabel {
 	-boxpointer-gap: 5px;
 }
 /* ###################################################################
- * Cinnamon Specific Section 
+ * Cinnamon Specific Section
  * ###################################################################*/
 /* ===================================================================
  * Menu (menu.js)
  * ===================================================================*/
 /* Main menu title */
-
+/* menu-favorites-box custom the left side of start menu */
 .menu-favorites-box {
 	width: 70%;
 	margin: auto;
 	padding: 10px;
 	border: 1px solid #666;
-	border-radius: 8px;
+	border-radius: 4px;
 	background-gradient-direction: vertical;
-	background-gradient-start: rgba(0,0,0,0);
-	background-gradient-end: rgba(0,0,0,0);
+	background-gradient-start: rgba(0,0,0,0.2);
+	background-gradient-end: rgba(0,0,0,0.2);
 	transition-duration: 300;
 }
+/* menu-favorites-button custom each button in left side favorites box */
 .menu-favorites-button {
 	padding-top: 10px;
 	padding-left: 10px;
@@ -1418,9 +1326,10 @@ StTooltip StLabel {
 	color: white;
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(200,200,200,0.5);
-	background-gradient-end: rgba(200,200,200,0.3);
-	/*box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);*/
+	background-gradient-end: rgba(200,200,200,0.2);
+	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
 	border-radius: 0px;
+	transition-duration: 200;
 }
 .menu-places-box {
 	width: 70%;
@@ -1462,14 +1371,15 @@ StTooltip StLabel {
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(150,150,150,0.6);
 	background-gradient-end: rgba(150,150,150,0.4);
-	/*box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);*/
+	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
 	border-radius: 0px;
+	transition-duration: 200;
 }
-.menu-application-button-label:ltr { 
-	padding-left: 5px		
+.menu-application-button-label:ltr {
+	padding-left: 5px
 }
-.menu-application-button-label:rtl { 
-	padding-right: 5px		
+.menu-application-button-label:rtl {
+	padding-right: 5px
 }
 .menu-category-button {
 	padding-top: 7px;
@@ -1494,15 +1404,15 @@ StTooltip StLabel {
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(150,150,150,0.6);
 	background-gradient-end: rgba(150,150,150,0.4);
-	/*box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06); */
+	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
 	border-radius: 0px;
-	/*transition-duration: 300;*/
+	transition-duration: 200;
 }
-.menu-category-button-label:ltr { 
-	padding-left: 5px		
+.menu-category-button-label:ltr {
+	padding-left: 5px
 }
-.menu-category-button-label:rtl { 
-	padding-right: 5px		
+.menu-category-button-label:rtl {
+	padding-right: 5px
 }
 .menu-category-button-button:hover {
 	background-color: #969696;
@@ -1575,17 +1485,18 @@ StTooltip StLabel {
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-	spacing: 5px;
-	padding-left: 10px;
-	padding-top: 1px;
+	spacing: 4px;
+	padding-left: 4px;
+	padding-top: 0px;
 }
 .window-list-item-label {
-	font-weight: bold;
 	width: 15em;
 	min-width: 5px;
 }
+/* window-list-box custom each application tab in window list */
 .window-list-item-box {
 	color: rgba(255,255,255,1.0);
+	font-weight: normal;
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(0,0,0,0.0);
 	background-gradient-end: rgba(100,100,100,0.0);
@@ -1595,13 +1506,13 @@ StTooltip StLabel {
 	border-bottom-width: 0px;
 	border-top-width: 0px;
 	border-radius: 0px 0px 0px 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	transition-duration: 300;
+	padding-left: 4px;
+	padding-right: 4px;
+	transition-duration: 200;
 }
 .window-list-item-box:active,
 .window-list-item-box:checked,
-.window-list-item-box:focus	{ 
+.window-list-item-box:focus	{
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(150,150,150,0.4);
 	background-gradient-end: rgba(150,150,150,0.9);
@@ -1609,15 +1520,88 @@ StTooltip StLabel {
 	border-color: rgba(0,0,0,0);
 	border-radius: 0px 0px 0px 0px;
 }
-.window-list-item-box:hover	{ 
+.window-list-item-box:hover	{
 	/*box-shadow: inset 0px 0px 1px 1px rgba(170,170,170,1.0);*/
 	border-color: rgb(220,220,220);
 	border-radius: 0px 0px 0px 0px;
 }
 .window-list-item-demands-attention {
-	background-gradient-start: rgba(255,52,52,0.5);
-	background-gradient-end: rgba(255,144,144,0.5);
+	background-gradient-start: rgba(52,52,52,0.5);
+	background-gradient-end: rgba(144,144,144,0.5);
 }
+
+.window-list-item-box:hover,
+.window-list-item-box:active,
+.window-list-item-box:checked,
+.window-list-item-box:focus,
+.window-list-item-box:checked:hover,
+.window-list-item-box:focus:hover,
+.window-list-item-box:active:hover,
+.window-list-item-demands-attention,
+.window-list-item-demands-attention:hover {
+}
+
+/*-----top panel-----*/
+
+.panel-top .window-list-item-box:hover  {
+    font-weight: bold;
+    border-image: url("panel-assets/top-item-hover.svg") 4;
+}
+
+.panel-top .window-list-item-box:active,
+.panel-top .window-list-item-box:checked,
+.panel-top .window-list-item-box:focus  {
+    font-weight: bold;
+    border-image: url("panel-assets/top-item-active.svg") 4;
+    color: #fff;
+}
+
+.panel-top .window-list-item-box:checked:hover,
+.panel-top .window-list-item-box:focus:hover,
+.panel-top .window-list-item-box:active:hover  {
+    font-weight: bold;
+    border-image: url("panel-assets/top-item-active-hover.svg") 4;
+    color: #fff;
+}
+/*
+.panel-top .window-list-item-demands-attention {
+    border-image: url("panel-assets/attention.svg") 4;
+}
+
+.panel-top .window-list-item-demands-attention:hover {
+    border-image: url("panel-assets/attention-hover.svg") 4;
+}*/
+/*-----bottom panel-----*/
+
+.panel-bottom .window-list-item-box:hover {
+    font-weight: bold;
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
+}
+
+.panel-bottom .window-list-item-box:active,
+.panel-bottom .window-list-item-box:checked,
+.panel-bottom .window-list-item-box:focus  {
+    font-weight: bold;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    color: #fff;
+}
+
+.panel-bottom .window-list-item-box:checked:hover,
+.panel-bottom .window-list-item-box:focus:hover,
+.panel-bottom .window-list-item-box:active:hover  {
+    font-weight: bold;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    color: #fff;
+}
+/*
+.panel-bottom .window-list-item-demands-attention {
+    border-image: url("panel-assets/attention.svg") 4;
+}
+
+.panel-bottom .window-list-item-demands-attention:hover {
+    border-image: url("panel-assets/attention-hover.svg") 4;
+}*/
+
 /* ===================================================================
  * Sound Applet (status/volume.js)
  * ===================================================================*/
@@ -1673,7 +1657,7 @@ StTooltip StLabel {
 #workspaceSwitcher {
 	spacing: 0px;
 	padding: 3px;
-	
+
 }
 .workspace-button {
 	width: 20px;
@@ -1760,23 +1744,24 @@ StTooltip StLabel {
 	background-image:	url("overview-hover.png");
 }
 /* ===================================================================
- * Applets (applet.js) 
+ * Applets (applet.js)
  * ===================================================================*/
 .applet-box {
-	padding-left: 3px;
-    padding-right: 3px;	
+	padding-left: 4px;
+  padding-right: 4px;
 	color: #ccc;
-	text-shadow: black 0px 0px 2px;
-	transition-duration: 300;
+	/*text-shadow: black 0px 0px 2px;*/
+	transition-duration: 200;
 	min-width: 1em;
-	
 }
 .applet-box:hover {
+	background: rgba(100,100,100,0.8);
 	color: #fff;
+	transition-duration: 200;
 }
-.applet-label {	
+.applet-label {
 	font-weight: bold;
-	color: #ccc;		
+	color: #fff;
 }
 .applet-label:hover,
 .applet-box:hover > .applet-label {
@@ -1784,12 +1769,19 @@ StTooltip StLabel {
 	text-shadow: white 0px 0px 5px;
 }
 .applet-icon {
+	icon-size: 16px;
 	color: #ccc;
 }
 .applet-icon:hover,
 .applet-box:hover > .applet-icon {
 	color: #fff;
 	icon-shadow: white 0px 0px 3px;
+}
+.applet-separator {
+    background-image: url("panel-assets/panel-separator.svg");
+    background-repeat: repeat;
+    width: 9px;
+    padding: 0;
 }
 
 /* ===================================================================
@@ -1848,37 +1840,39 @@ StTooltip StLabel {
  * ===================================================================*/
 
 .user-box {
-    padding: .4em 1.5em;
-    padding-bottom: .6em;
-    spacing: 10px;
+  padding: .4em 1.5em;
+  padding-bottom: .6em;
+  spacing: 10px;
+}
+.user-box:hover {
+	background: rgba(100,100,100,0.8);
 }
 
 .user-icon {
-    width: 32px;
-    height: 32px;
-    background-color: transparent;
-    border: 0 solid transparent;
-    border-radius: 0;
-    padding: 0;
-    border-radius: 0;
-    padding: 0;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 0 solid transparent;
+  border-radius: 0;
+  padding: 0;
+  border-radius: 0;
 }
 
 .user-label {
-    color: #dcdcdc;
-    font-size: 10pt;
-    font-weight: bold;
-    margin: 0;
+  color: #dcdcdc;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0;
 }
 /* ===================================================================
  * Snap/Tile OSD Popup
  * ===================================================================*/
 
 .snap-osd {
-    border-image: url("background-assets/popup.svg") 7;
-    font-size: 14pt;
+    border-image: url("background-assets/popup.svg") 8;
+    font-size: 18pt;
     font-weight: bold;
-    padding: 10px;
-    color: white;
+    padding: 20px;
+    color: #fff;
     text-align: center;
 }
