@@ -35,3 +35,6 @@ workspace view
 
 Then change to this theme in system setting.
 
+## License
+
+Origin Dark Glass theme is under GPL license, so I update [License](LICENSE).
