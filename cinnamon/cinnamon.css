@@ -413,14 +413,14 @@ StTooltip StLabel {
 }
 
 .workspace-close-button {
-    background-image: url("expo-scale-assets/close.svg");
+    background: url("control-assets/close.svg");
     height: 41px;
     width: 41px;
     -cinnamon-close-overlap: 28px;
 }
 .workspace-close-button:hover,
 .workspace-close-button:active {
-    background-image: url("expo-scale-assets/close.svg");
+    background: url("control-assets/close.svg");
 }
 .expo-workspaces-name-entry {
     border-image: url("expo-scale-assets/workspace-name.svg") 6;
@@ -473,7 +473,7 @@ StTooltip StLabel {
  * Scale view
  * ===================================================================*/
 .window-caption {
-    border-image: url("expo-scale-assets/window-name.svg") 6;
+  border-image: url("expo-scale-assets/window-name.svg") 6;
 	border-radius: 4px;
 	color: #dcdcdc;
 	font-size: 9pt;
@@ -481,20 +481,20 @@ StTooltip StLabel {
 	-cinnamon-caption-spacing: 10px;
 }
 .window-caption#selected {
-    border-image: url("expo-scale-assets/window-name-focused.svg") 6;
-    font-weight: bold;
-    color: #fff;
-    spacing: 25px;
+  border-image: url("expo-scale-assets/window-name-focused.svg") 6;
+  font-weight: bold;
+  color: #fff;
+  spacing: 25px;
 }
 .window-close {
-	background-image: url("expo-scale-assets/close.svg");
-    height: 41px;
-    width: 41px;
-    -cinnamon-close-overlap: 22px;
+  background: url("control-assets/close.svg");
+  height: 41px;
+  width: 41px;
+  -cinnamon-close-overlap: 22px;
 }
 .window-close:hover,
 .window-close:active {
-    background-image: url("control-assets/close.svg");
+  background: url("control-assets/close.svg");
 }
 .window-close:rtl {
 	-st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);
